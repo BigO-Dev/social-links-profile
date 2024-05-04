@@ -1,0 +1,66 @@
+/* Custom CSS Properties */
+
+:root {
+  --primary-green: hsl(75, 94%, 57%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --neutral-dark-grey: hsl(0, 0%, 12%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+  --typography-body-copy: 0.875rem;
+  --typography-font-family: 'Inter', sans-serif;
+  --typography-font-weight-regular: 400;
+  --typography-font-weight-medium: 600;
+  --typography-font-weight-bold: 700;
+}
+
+/* Reset CSS */
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--typography-font-family);
+  font-size: var(--typography-body-copy);
+  color: var(--neutral-grey);
+  background-color: var(--neutral-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-green);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
