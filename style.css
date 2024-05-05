@@ -118,26 +118,29 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
   gap: 1rem;
 }
 
-.profile__link {
+.profile__links li {
   background-color: var(--neutral-grey);
+  font-size: var(--typography-body-copy);
+  font-weight: var(--typography-font-weight-medium);
   width: 384px;
+  height: 48px;
   border-radius: 0.5rem;
 }
 
-.profile__link a {
-  display: block;
-  padding: 1rem;
-  text-align: center;
+.profile__btn {
   color: var(--neutral-white);
-  font-weight: var(--typography-font-weight-medium);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
 
-.profile__link a:hover,
-.profile__link a:focus {
+.profile__btn:hover,
+.profile__btn:focus {
   background-color: var(--primary-green);
   color: var(--neutral-off-black);
   font-weight: var(--typography-font-weight-bold);
@@ -156,4 +159,26 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  /* Add responsive styles here */
+  body {
+    font-size: 0.75rem;
+  }
+  .profile__card {
+    padding: 1rem;
+  }
+  .profile__card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+  }
+  .profile__info .location,
+  .profile__info .bio {
+    margin-bottom: 1rem;
+  }
+  .profile__links li {
+    width: 100%;
+  }
 }
