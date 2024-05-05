@@ -15,11 +15,13 @@
 }
 
 /* Reset CSS */
-/* Reset CSS */
 *,
 *::before,
 *::after {
   margin: 0;
+  @media (max-width: 375px) {
+    /* Add responsive styles here */
+  }
   padding: 0;
   box-sizing: border-box;
 }
@@ -134,7 +136,8 @@ body {
   font-weight: var(--typography-font-weight-medium);
 }
 
-.profile__link a:hover {
+.profile__link a:hover,
+.profile__link a:focus {
   background-color: var(--primary-green);
   color: var(--neutral-off-black);
   font-weight: var(--typography-font-weight-bold);
