@@ -125,13 +125,14 @@ body {
   background-color: var(--neutral-grey);
   font-size: var(--typography-body-copy);
   font-weight: var(--typography-font-weight-medium);
-  width: 384px;
-  height: 48px;
+
   border-radius: 0.5rem;
 }
 
 .profile__btn {
   color: var(--neutral-white);
+  width: 384px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
